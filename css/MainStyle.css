@@ -1,0 +1,297 @@
+a{
+    text-decoration:none;
+    color: black;
+    font: 15px 'Lato',open-sans;
+}
+
+form{
+    margin:0;
+}
+
+.Wrapper{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "banner"
+    "main"
+    "footer";
+grid-template-columns:1fr;
+grid-auto-rows: 50px 500px 600px 100px;
+}
+
+
+
+.header {
+grid-area: header;
+display: grid;
+    grid-template-areas:
+    "head"
+    "nav";
+grid-template-columns:1fr 1fr;
+grid-auto-rows: 50px;
+background-color: #20B2AA ;
+margin:0;
+}
+
+.header img{
+    margin:10px 10px;
+}
+nav a{
+    text-decoration:none;
+}
+
+.top-menu {
+    text-align: right;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.top-menu li.active {
+    color: #fff;
+}
+
+.top-menu a {
+    color:white;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    list-style-position:inside;
+    font:14px 'Oswald',sans-serif;
+    padding:10px;
+}
+
+h1{
+    font: 16px 'Oswald',sans-serif;
+    color: white;
+    padding:0px 10px;
+}
+
+.banner{
+    grid-area: banner;
+    text-align: center;
+    color:white;
+    background: url(../images/main.png) no-repeat center top / cover;
+    height: 500px;
+}
+
+.form{
+    text-align: right;
+}
+
+.text{
+    margin:100px 0px 0px 0px;
+}
+
+.banner header{
+    font: 50px 'Lato',open-sans;
+    color:black;
+}
+
+p2{
+    font: 20px 'Lato',open-sans;
+    color:black;
+}
+
+.banner button{
+    margin: 30px;
+    padding:10px 20px;
+    border:0;
+    background-color:#549480;
+    text-decoration:none;
+}
+.banner a{
+    text-decoration:none;
+    font: 15px 'Lato',open-sans;
+    color:white;
+}
+
+
+.main {
+    display: grid;
+    grid-template-areas:
+    "t1 t2 t3"
+    "inf1 inf2 inf3";
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows: 250px 350px;
+}
+
+.main p1{
+    margin:10 0 0 0;
+    text-align: center;
+    color:black;
+    font: 15px 'Lato',open-sans;
+}
+
+.main p{
+    margin:0 0 0 0;
+    text-align: center;
+    color:black;
+    font: 15px 'Lato',open-sans;
+}
+
+.main header {
+    color:blue;
+    font: 22px 'Lato',open-sans;
+}
+
+.main header a{
+    color:blue;
+    font: 22px 'Lato',open-sans;
+}
+
+/*.main {
+    display: grid;
+    grid-template-areas:
+        "line1"
+        "line2";
+    grid-template-columns:1fr;
+    grid-auto-rows: 250px 250px;
+}
+
+.line1{
+    grid-area: line1;
+    display: grid;
+    grid-template-areas:
+        "t1 t2 t3"
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+}
+
+.line2{
+    grid-area: line2;
+    display: grid;
+    grid-template-areas:
+        "inf1 inf2 inf3";
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    background-color: rgb(245,245,245);
+}*/
+
+.txt1{
+    grid-area: t1;
+    text-align: center;
+    word-break:break-all;
+    margin:10px;
+}
+
+.txt1 li{
+    display: inline-block;
+    list-style-position:inside;
+    font:14px 'Lato',open-sans;
+    padding:10px;
+}
+.txt2{
+    grid-area: t2;
+    text-align: center;
+    word-break:break-all;
+    margin:10px;
+}
+
+.txt2 li{
+    display: inline-block;
+    list-style-position:inside;
+    font:14px 'Lato',open-sans;
+    padding:10px;
+}
+.txt3{
+    grid-area: t3;
+    text-align: center;
+    word-break:break-all;
+    margin:10px;
+}
+
+.txt3 li{
+    display: inline-block;
+    list-style-position:inside;
+    font:14px 'Lato',open-sans;
+    padding:10px;
+}
+.main div{
+    background-color: rgb(245,245,245);
+}
+
+
+.main header{
+    font:25px 'Lato',open-sans;
+}
+.inf1{
+    grid-area: inf1;
+    text-align: center;
+    word-break:break-all;
+    margin:10px;
+    font:14px 'Lato',open-sans;
+    background-color: rgb(245,245,245);
+}
+
+.inf1 header1{
+    font:30px 'Lato',open-sans;
+}
+
+.inf2{
+    grid-area: inf2;
+    text-align: center;
+    word-break:break-all;
+    padding: 23px 0px;
+    margin: 10px;
+    font:14px 'Lato',open-sans;
+    background-color: rgb(245,245,245);
+}
+
+.inf3{
+    grid-area: inf3;
+    text-align: center;
+    word-break:break-all;
+    padding: 23px 0px;
+    margin:10px;
+    font:14px 'Lato',open-sans;
+    background-color: rgb(245,245,245);
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #008080 ;
+    font:10px 'Lato',open-sans;
+    color:white;
+
+}
+.footer div a{
+    color:white;
+    font:10px 'Lato',open-sans;
+}
+.footer header{
+    font:15px 'Lato',open-sans;
+
+}
+
+.cl1{
+    grid-area: cl1;
+    word-break:break-all;
+}
+.cl2{
+    grid-area: cl2;
+    word-break:break-all;
+}
+.cl3{
+    grid-area: cl3;
+    word-break:break-all;
+}
+.cl4{
+    grid-area: cl4;
+    word-break:break-all;
+}
+
+.cl5 {
+    order:2;
+}
+
