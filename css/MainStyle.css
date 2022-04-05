@@ -223,30 +223,8 @@ p2{
 .main header{
     font:25px 'Lato',open-sans;
 }
-.inf1{
-    grid-area: inf1;
-    text-align: center;
-    word-break:break-all;
-    margin:10px;
-    font:14px 'Lato',open-sans;
-    background-color: rgb(245,245,245);
-}
 
-.inf1 header1{
-    font:30px 'Lato',open-sans;
-}
-
-.inf2{
-    grid-area: inf2;
-    text-align: center;
-    word-break:break-all;
-    padding: 23px 0px;
-    margin: 10px;
-    font:14px 'Lato',open-sans;
-    background-color: rgb(245,245,245);
-}
-
-.inf3{
+.inf{
     grid-area: inf3;
     text-align: center;
     word-break:break-all;
@@ -274,24 +252,21 @@ p2{
 
 }
 
-.cl1{
+.column1{
     grid-area: cl1;
     word-break:break-all;
 }
-.cl2{
-    grid-area: cl2;
-    word-break:break-all;
-}
-.cl3{
+
+.column2{
     grid-area: cl3;
     word-break:break-all;
 }
-.cl4{
+.column3{
     grid-area: cl4;
     word-break:break-all;
 }
 
-.cl5 {
+.column4 {
     order:2;
 }
 
