@@ -19,7 +19,10 @@ grid-template-columns:1fr;
 grid-auto-rows: 50px 500px 600px 100px;
 }
 
-
+.top-menu li.active {
+    background: #29c5e6;
+    color: #fff;
+}
 
 .header {
 grid-area: header;

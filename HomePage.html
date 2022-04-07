@@ -4,121 +4,157 @@
     <meta charset="utf-8">
     <title>RecipesFromGlasha</title>
     <link rel="stylesheet" href="css/MainStyle.css">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
-<div class="Wrapper">
-    <header class='header'>
-        <img src="images/logo.png" alt="Whitesquare logo">
-        <nav>
-            <ul class="top-menu">
-                <li class="active"><a href="HomePage.html">Главная</a> </li>
-                <li><a href="#">О нас</a> </li>
-                <li><a href="#">Рецепты</a> </li>
-                <li><a href="#">Предложить свой рецепт</a> </li>
-            </ul>
-        </nav>
-    </header>
-    <banner class='banner'>
-        <form class="form">
-            <input name="s" placeholder="Что хотим приготовить?" type="search">
-            <button type="submit">Поиск</button>
-        </form>
-        <div class="text">
-            <header>Лучшие рецепты</header>
-            <br/>
-            <p2>От тёти Глаши и не только</p2>
-            <br/>
-            <button><a href="test.html">Больше рецептов</a></button>
-        </div>
-    </banner>
-    <main class="main">
+    <div class="Wrapper">
+
+        <header class='header'>
+            <img src="images/logo.png" alt="Whitesquare logo">
+            <nav>
+                <ul class="top-menu">
+                    <li class="active"><a href="HomePage.html" onclick="setHeaderText(this)">Главная</a> </li>
+                    <li><a href="#" onclick="setHeaderText(this)">О нас</a> </li>
+                    <li><a href="#" onclick="setHeaderText(this)">Рецепты</a> </li>
+                    <li><a href="#" onclick="setHeaderText(this)">Предложить свой рецепт</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <banner class='banner'>
+            <form class="form">
+                <input name="s" placeholder="Что хотим приготовить?" type="search">
+                <button type="submit">Поиск</button>
+            </form>
+            <div class="text">
+                <header>Лучшие рецепты</header>
+                <br/>
+                <p2>От тёти Глаши и не только</p2>
+                <br/>
+                <button><a href="test.html">Больше рецептов</a></button>
+            </div>
+        </banner>
+
+        <main class="main">
+
+                <article class="txt1">
+                    <header>О нас</header>
+                    <br/>
+                    <pt>Наш сайт создан специально для любителей вкусно покушать. Здесь вы можете найти <br/>любой рецепт на свой вкус. А так же поделиться своими.</pt>
+                    <br/>
+                    <li><a href="#">Узнать больше</a></li>
+                </article>
+                <article class="txt2">
+                    <header>Популярные рецепты</header>
+                    <br/>
+                    <p1><a href="#">Борщ по-украински</a></p1>
+                    <p><a href="#">Манты от Дяди Васи</a></p>
+                    <p><a href="#">Пельмени от бабушки Тони</a></p>
+                    <li><a href="#">Больше рецептов</a></li>
+                </article>
+                <article class="txt3">
+                    <header>Самые лучшие авторы</header>
+                    <br/>
+                    <p>Тётя Глаша</p>
+                    <p>Бабушка Марья</p>
+                    <li><a href="#">Все авторы</a></li>
+                </article>
 
 
-            <article class="txt1">
-                <header>О нас</header>
-                <br/>
-                <pt>Наш сайт создан специально для любителей вкусно покушать. Здесь вы можете найти <br/>любой рецепт на свой вкус. А так же поделиться своими.</pt>
-                <br/>
-                <li><a href="#">Узнать больше</a></li>
-            </article>
-            <article class="txt2">
-                <header>Популярные рецепты</header>
-                <br/>
-                <p1><a href="#">Борщ по-украински</a></p1>
-                <p><a href="#">Манты от Дяди Васи</a></p>
-                <p><a href="#">Пельмени от бабушки Тони</a></p>
-                <li><a href="#">Больше рецептов</a></li>
-            </article>
-            <article class="txt3">
-                <header>Самые лучшие авторы</header>
-                <br/>
-                <p>Тётя Глаша</p>
-                <p>Бабушка Марья</p>
-                <li><a href="#">Все авторы</a></li>
-            </article>
-
-
-        <div>
-            <article class="inf">
-                <figure>
-                    <img src="images/Oladyi.png" width="250" height="150" alt="">
-                </figure>
-                <br/>
-                <header><a href="#">Оладушки от тёти Глаши</a></header>
-                <br/>
-                <pt>Наша всеми любимая тётя Глаша поделилась рецептом замечательных оладий. Они получаются <br/>нежные лёгкие и очень очень вкусные.</pt>
-            </article>
-        </div>
-        <div>
-            <article class="inf">
-                <figure>
-                    <img src="images/Kotleta.png" width="250" height="150" alt="">
-                </figure>
-                <br/>
-                <header><a href="#">Лучшие котлеты по киевски</a></header>
-                <br/>
-                <pt>Кто бы мог подумать что у тёти Глаши настолько вкусные котлеты по киевски. И она как всегда <br/>поделилась этим замечательным рецептом с нами. </pt>
-            </article>
-        </div>
             <div>
                 <article class="inf">
-                <figure>
-                    <img src="images/Pirog.png" width="250" height="150" alt="">
-                </figure>
-                <br/>
-                <header><a href="CherryPie.html">Вкуснейший вишнёвый пирог</a></header>
-                <br/>
-                <pt>Наша новая звезда бабушка Марья рассказала секрет самого лучшего вишнёвого пирога.</pt>
+                    <figure>
+                        <img src="images/Oladyi.png" width="250" height="150" alt="">
+                    </figure>
+                    <br/>
+                    <header  ><a href="#">Оладушки от тёти Глаши</a></header>
+                    <br/>
+                    <pt >Наша всеми любимая тётя Глаша поделилась рецептом замечательных оладий. Они получаются <br/>нежные лёгкие и очень очень вкусные.</pt>
                 </article>
             </div>
+            <div>
+                <article class="inf">
+                    <figure>
+                        <img src="images/Kotleta.png" width="250" height="150" alt="">
+                    </figure>
+                    <br/>
+                    <header><a href="#">Лучшие котлеты по киевски</a></header>
+                    <br/>
+                    <pt>Кто бы мог подумать что у тёти Глаши настолько вкусные котлеты по киевски. И она как всегда <br/>поделилась этим замечательным рецептом с нами. </pt>
+                </article>
+            </div>
+                <div>
+                    <article class="inf">
+                    <figure>
+                        <img src="images/Pirog.png" width="250" height="150" alt="">
+                    </figure>
+                    <br/>
+                    <header><a href="CherryPie.html">Вкуснейший вишнёвый пирог</a></header>
+                    <br/>
+                    <pt>Наша новая звезда бабушка Марья рассказала секрет самого лучшего вишнёвого пирога.</pt>
+                    </article>
+                </div>
+        </main>
 
+        <footer class="footer">
+            <div class="column1">
+                <header>О нас</header>
+                <p><a href="#">Лучшие авторы</a> </p>
+                <p><a href="#">Отзывы</a> </p>
+                <p><a href="#">Коммерческие преддложения</a> </p>
+                <p><a href="#">Vk</a> </p>
+                <p><a href="#">Instagram</a> </p>
+            </div>
+            <div class="column2">
+                <header>Блог</header>
+                <p><a href="#">Популярные авторы</a> </p>
+                <p><a href="#">Популярные рецепты</a></p>
+            </div>
+            <div class="column3">
+                <header>Связь</header>
+                <p>Телефон: +9(999)999-99-99 </p>
+                <p>Почта:glasha@mail.ru </p>
+            </div>
+            <div class="column4">
+                <figure>
+                    <img src="images/logo.png" alt="Whitesquare logo">
+                </figure>
+            </div>
+        </footer>
 
-    </main>
-    <footer class="footer">
-        <div class="column1">
-            <header>О нас</header>
-            <p><a href="#">Лучшие авторы</a> </p>
-            <p><a href="#">Отзывы</a> </p>
-            <p><a href="#">Коммерческие преддложения</a> </p>
-            <p><a href="#">Vk</a> </p>
-            <p><a href="#">Instagram</a> </p>
-        </div>
-        <div class="column2">
-            <header>Блог</header>
-            <p><a href="#">Популярные авторы</a> </p>
-            <p><a href="#">Популярные рецепты</a></p>
-        </div>
-        <div class="column3">
-            <header>Связь</header>
-            <p>Телефон: +9(999)999-99-99 </p>
-            <p>Почта:glasha@mail.ru </p>
-        </div>
-        <div class="column4">
-            <figure>
-                <img src="images/logo.png" alt="Whitesquare logo">
-            </figure>
-        </div>
-    </footer>
-</div>
+    </div>
+
+<script type="text/javascript">
+    $(".top-menu li").mouseenter(function () {
+        $(this).addClass("active");
+    }).mouseleave(function () {
+        $(this).removeClass("active");
+    });
+    $("figure img").hover(
+        function() {
+            $(this).animate({
+                width: "350px",
+                height: "200px",
+                borderRadius: "2%"
+            }, "slow");
+        }, function() {
+            $(this).animate({
+                width: "320px",
+                height: "180px",
+                borderRadius: "10%"
+            }, "slow");
+        });
+
+</script>
+<script>
+    function hide(){
+        obj = document.getElementById('fld');
+        if(obj){
+            if(obj.style.display=='none') obj.style.display='';
+            else obj.style.display='none';
+        }
+    }
+</script>
+
 </body>
 </html>
