@@ -4,28 +4,29 @@
     <meta charset="utf-8">
     <title>RecipesFromGlasha</title>
     <link rel="stylesheet" href="css/PieStyle.css">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
     <header>
         <div class="container">
-        <img src="images/logo.png" alt="Golden" class = "logo">
-        <nav>
-            <ul class="top-menu">
-                <li class="active">
-                    <a href="HomePage.html">Главная</a>
-                </li>
-                <li>
-                    <a href="#">О нас</a>
-                </li>
-                <li>
-                   <a href="#">Рецепты</a>
-                </li>
-                <li>
-                    <a href="#">Предложить свой рецепт</a>
-                </li>
-            </ul>
-        </nav>
+            <img src="images/logo.png" alt="Golden" class = "logo">
+            <nav>
+                <ul class="top-menu">
+                    <li>
+                        <a href="HomePage.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="active">
+                       <a href="#">Рецепты</a>
+                    </li>
+                    <li>
+                        <a href="SendRecipe.html">Предложить свой рецепт</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -154,12 +155,18 @@
         </div>
         <div class="column4">
             <figure>
-                <img src="images/logo.png" alt="Whitesquare logo">
+                <img src="images/logo.png" alt="Golden">
             </figure>
         </div>
     </footer>
 
-
+    <script type="text/javascript">
+        $(".top-menu li").mouseenter(function () {
+            $(this).addClass("active");
+        }).mouseleave(function () {
+            $(this).removeClass("active");
+        });
+    </script>
 
 </body>
 
