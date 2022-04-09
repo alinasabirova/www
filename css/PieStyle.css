@@ -1,6 +1,3 @@
-a{
-	text-decoration:none
-}
 body {
     font-family: Arial, sans-serif;
     color: white;
@@ -8,110 +5,90 @@ body {
     margin: 0;
 }
 
-.Wrapper{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "banner"
-    "main"
-    "footer";
-grid-template-columns:1fr; 
-grid-auto-rows: 50px 500px auto 100px;
+header {
+    color: #e7e9e7;
+    height: 90px;
+    background-color: rgb(157, 7, 48);
 }
 
-.header {
-grid-area: header;
-display: grid;
-    grid-template-areas:
-    "head"
-    "nav";
-grid-template-columns:1fr 1fr;
-grid-auto-rows: 50px;
-background-color: #20B2AA ;
-margin:0;
+div {
+    box-sizing: border-box;
 }
 
-.header img{
-    margin:10px 10px;
+.logo {
+    margin-top: 35px;
+    float: left;
 }
-nav a{
-    text-decoration:none;
+nav {
+    float: right;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .top-menu {
-    text-align: right;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 
 .top-menu li {
-    display: inline-block;
-    padding: 10px 10px;
-    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 40px;
 }
 
 .top-menu li.active {
+    background: #29c5e6;
     color: #fff;
 }
 
 .top-menu a {
-    color:white;
-}
-
-nav ul{
-    margin:0;
-    padding:0;
-}
-
-nav li{
-    list-style-position:inside;
-    font:14px 'Oswald',sans-serif;
-    padding:10px;
-}
-
-h1 {
-	font-size: 55px;
-	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
-	margin: 15px;
-    padding-top: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .banner{
-    grid-area: banner;
-    padding:200px 0px;
     text-align: center;
-    background-color: #008080 ;
     color:white;
     background: url(../images/Pirog.png) no-repeat center top / cover;
-    height: 10vh;
+    height: 500px;
+    display: grid;
+    width: 100%;
+    clear: both;
 }
 
-.banner header{
-    font: 50px 'Lato',open-sans;
-    color:black;
+.title_first {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 190px;
 }
 
 p2{
-    font: 20px 'Lato',open-sans;
+    font-size: 20px;
     color:black;
 }
 
-.banner button{
-    margin: 30px;
-    padding:10px 20px;
-    border:0;
-    background-color:#549480;
-    text-decoration:none;
-}
 .banner a{
     text-decoration:none;
-    font: 15px 'Lato',open-sans;
+    font-size: 15px;
     color:white;
 }
 
 .container {
 	width: 1200px;
 	margin: 0 auto;
+}
+
+.container_recipe {
+    margin-top: 30px;
+}
+
+.main {
+    display: grid;
 }
 
 .main p{
@@ -161,38 +138,37 @@ p2{
 }
 
 .footer {
+    margin-top: 30px;
     display: flex;
     justify-content:space-evenly;
-    background-color: #008080 ;
-    font:10px 'Lato',open-sans;
+    background-color: rgb(157, 7, 48);
+    font-size:10px;
     color:white;
+
 }
 .footer div a{
     color:white;
-    font:10px 'Lato',open-sans;
 }
-.footer header{
-    font:15px 'Lato',open-sans;
-
+.footer h4{
+    font-size:15px;
 }
 
-.cl1{
+.column1{
     grid-area: cl1;
     word-break:break-all;
 }
-.cl2{
-    grid-area: cl2;
-    word-break:break-all;
-}
-.cl3{
+
+.column2{
     grid-area: cl3;
     word-break:break-all;
 }
-.cl4{
+.column3{
     grid-area: cl4;
     word-break:break-all;
 }
-.cl5 {
+
+.column4 {
+    margin-top: 50px;
     order:2;
 }
 

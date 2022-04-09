@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RecipesFromGlasha</title>
+    <link rel="stylesheet" href="css/FormStyle.css">
+</head>
+<body>
+<header class='header'>
+    <img src="images/logo.png" alt="Whitesquare logo">
+    <nav>
+        <ul class="top-menu">
+            <li class="active"><a href="HomePage.html">Главная</a> </li>
+            <li><a href="#">О нас</a> </li>
+            <li><a href="#">Рецепты</a> </li>
+            <li><a href="#">Предложить свой рецепт</a> </li>
+        </ul>
+    </nav>
+</header>
+
+<form action="#">
+    <div>
+        <p>Имя</p>
+        <input tabindex="1" placeholder="Имя" name="name" type="text">
+    </div>
+    <div>
+        <p>Фамилия</p>
+        <input tabindex="2" placeholder="Фамилия" name="surname" type="text">
+    </div>
+    <div>
+        <p>Электронная почта</p>
+        <input tabindex="3" placeholder="Электронная почта" name="email" type="email">
+    </div>
+    <div>
+        <p>Название блюда</p>
+        <input tabindex="4" placeholder="Название блюда" name="DishName" type="text">
+    </div>
+    <div>
+        <p>Тип блюда</p>
+        <select tabindex="5" name="type">
+            <option value="breakfast"> Завтрак </option>
+            <option value="lunch"> Обед </option>
+            <option value="dinner"> Ужин </option>
+            <option value="snack"> Перекус </option>
+        </select>
+    </div>
+    <div>
+        <p>Рецепт</p>
+        <textarea tabindex="6" name="recipe"></textarea>
+    </div>
+    <div>
+        <p>Действие</p>
+        <button tabindex="7" type="submit">Отправить</button>
+        <button tabindex="8" type="reset">Очистить</button>
+    </div>
+
+</form>
+
+</body>
+</html>

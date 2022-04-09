@@ -1,7 +1,14 @@
 a{
     text-decoration:none;
     color: black;
-    font: 15px 'Lato',open-sans;
+    font-size: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 
 form{
@@ -15,8 +22,36 @@ form{
     "banner"
     "main"
     "footer";
-grid-template-columns:1fr;
-grid-auto-rows: 50px 500px 600px 100px;
+    grid-template-columns:1fr;
+    grid-auto-rows: 90px 500px auto auto;
+}
+
+.header {
+    color: #e7e9e7;
+    height: 90px;
+    background-color: #008080;
+}
+
+.logo {
+    margin: 35px 35px;
+    float: left;
+}
+nav {
+    float: right;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.top-menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.top-menu li {
+    float: left;
+    display: block;
+    margin-right: 40px;
 }
 
 .top-menu li.active {
@@ -24,56 +59,15 @@ grid-auto-rows: 50px 500px 600px 100px;
     color: #fff;
 }
 
-.header {
-grid-area: header;
-display: grid;
-    grid-template-areas:
-    "head"
-    "nav";
-grid-template-columns:1fr 1fr;
-grid-auto-rows: 50px;
-background-color: #20B2AA ;
-margin:0;
-}
-
-.header img{
-    margin:10px 10px;
-}
-nav a{
-    text-decoration:none;
-}
-
-.top-menu {
-    text-align: right;
-}
-
-.top-menu li {
-    display: inline-block;
-    padding: 10px 10px;
-    margin: 0;
-}
-
-.top-menu li.active {
-    color: #fff;
-}
-
 .top-menu a {
-    color:white;
-}
-
-nav ul{
-    margin:0;
-    padding:0;
-}
-
-nav li{
-    list-style-position:inside;
-    font:14px 'Oswald',sans-serif;
-    padding:10px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 h1{
-    font: 16px 'Oswald',sans-serif;
+    font-size: 16px;
     color: white;
     padding:0px 10px;
 }
@@ -95,12 +89,14 @@ h1{
 }
 
 .banner header{
-    font: 50px 'Lato',open-sans;
+    font-size: 50px;
     color:black;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 p2{
-    font: 20px 'Lato',open-sans;
+    font-size: 20px;
     color:black;
 }
 
@@ -113,7 +109,7 @@ p2{
 }
 .banner a{
     text-decoration:none;
-    font: 15px 'Lato',open-sans;
+    font-size: 15px;
     color:white;
 }
 
@@ -128,27 +124,27 @@ p2{
 }
 
 .main p1{
-    margin:10 0 0 0;
+    margin-top:10px;
     text-align: center;
     color:black;
-    font: 15px 'Lato',open-sans;
+    font-size: 15px;
 }
 
 .main p{
-    margin:0 0 0 0;
+    margin:0;
     text-align: center;
     color:black;
-    font: 15px 'Lato',open-sans;
+    font-size: 15px;
 }
 
 .main header {
     color:blue;
-    font: 22px 'Lato',open-sans;
+    font-size: 22px;
 }
 
 .main header a{
     color:blue;
-    font: 22px 'Lato',open-sans;
+    font-size: 22px;
 }
 
 /*.main {
@@ -159,7 +155,6 @@ p2{
     grid-template-columns:1fr;
     grid-auto-rows: 250px 250px;
 }
-
 .line1{
     grid-area: line1;
     display: grid;
@@ -168,7 +163,6 @@ p2{
     grid-template-columns:1fr 1fr 1fr;
     grid-auto-rows: 250px;
 }
-
 .line2{
     grid-area: line2;
     display: grid;
@@ -189,7 +183,7 @@ p2{
 .txt1 li{
     display: inline-block;
     list-style-position:inside;
-    font:14px 'Lato',open-sans;
+    font-size:14px;
     padding:10px;
 }
 .txt2{
@@ -202,7 +196,7 @@ p2{
 .txt2 li{
     display: inline-block;
     list-style-position:inside;
-    font:14px 'Lato',open-sans;
+    font-size:14px;
     padding:10px;
 }
 .txt3{
@@ -215,7 +209,7 @@ p2{
 .txt3 li{
     display: inline-block;
     list-style-position:inside;
-    font:14px 'Lato',open-sans;
+    font-size:14px;
     padding:10px;
 }
 .main div{
@@ -224,7 +218,7 @@ p2{
 
 
 .main header{
-    font:25px 'Lato',open-sans;
+    font-size:25px;
 }
 
 .inf{
@@ -233,7 +227,7 @@ p2{
     word-break:break-all;
     padding: 23px 0px;
     margin:10px;
-    font:14px 'Lato',open-sans;
+    font-size:14px;
     background-color: rgb(245,245,245);
 }
 
@@ -242,17 +236,16 @@ p2{
     display: flex;
     justify-content:space-evenly;
     background-color: #008080 ;
-    font:10px 'Lato',open-sans;
+    font-size:10px;
     color:white;
 
 }
 .footer div a{
     color:white;
-    font:10px 'Lato',open-sans;
+    font-size:10px;
 }
-.footer header{
-    font:15px 'Lato',open-sans;
-
+.footer h4{
+    font-size:15px;
 }
 
 .column1{

@@ -6,26 +6,39 @@
     <link rel="stylesheet" href="css/PieStyle.css">
 </head>
 <body>
-<div class="Wrapper">
-    <header class='header'>
-        <img src="images/logo.png" alt="Whitesquare logo">
+
+    <header>
+        <div class="container">
+        <img src="images/logo.png" alt="Golden" class = "logo">
         <nav>
             <ul class="top-menu">
-                <li class="active"><a href="HomePage.html">Главная</a> </li>
-                <li><a href="#">О нас</a> </li>
-                <li><a href="#">Рецепты</a> </li>
-                <li><a href="#">Предложить свой рецепт</a> </li>
+                <li class="active">
+                    <a href="HomePage.html">Главная</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                   <a href="#">Рецепты</a>
+                </li>
+                <li>
+                    <a href="#">Предложить свой рецепт</a>
+                </li>
             </ul>
         </nav>
+        </div>
     </header>
-    <div class='banner'>
+
+    <banner class='banner'>
+        <div class='title_first'>
             <h1>Вишневый пирог</h1>
-    </div>
+        </div>
+    </banner>
 
     <main class="main">
-
      <section id="recipe__ingredient">
         <div class = "container">
+            <div class = "container_recipe">
             <div class="title">
                 <h2>
 					Ингредиенты
@@ -60,12 +73,13 @@
                     </li>
                 </ul>
             </div>
+            </div>
         </div> 
       </section>
 
-
       <section id="recipe">
 		<div class="container">
+            <div class = "container_recipe">
 			<div class="title">
 				<h2>
 					Пошаговый рецепт
@@ -113,36 +127,40 @@
 						Выпекать в духовке при температуре 200 градусов 40-50 мин.
 					</p>
 				</div>
+            </div>
 		</div>
 	</section>
 
     </main>
-    
+
     <footer class="footer">
-        <div class="cl1">
-            <header>О нас</header>
+        <div class="column1">
+            <h4>О нас</h4>
             <p><a href="#">Лучшие авторы</a> </p>
             <p><a href="#">Отзывы</a> </p>
             <p><a href="#">Коммерческие преддложения</a> </p>
             <p><a href="#">Vk</a> </p>
             <p><a href="#">Instagram</a> </p>
         </div>
-        <div class="cl3">
-            <header>Блог</header>
+        <div class="column2">
+            <h4>Блог</h4>
             <p><a href="#">Популярные авторы</a> </p>
             <p><a href="#">Популярные рецепты</a></p>
         </div>
-        <div class="cl4">
-            <header>Связь</header>
+        <div class="column3">
+            <h4>Связь</h4>
             <p>Телефон: +9(999)999-99-99 </p>
             <p>Почта:glasha@mail.ru </p>
         </div>
-        <div class="cl5">
+        <div class="column4">
             <figure>
                 <img src="images/logo.png" alt="Whitesquare logo">
             </figure>
         </div>
     </footer>
-</div>
+
+
+
 </body>
+
 </html>
