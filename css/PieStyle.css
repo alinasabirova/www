@@ -3,6 +3,7 @@ body {
     color: white;
     padding: 0;
     margin: 0;
+    width: 100vw;
 }
 
 header {
@@ -86,6 +87,10 @@ p2{
 
 .container_recipe {
     margin-top: 30px;
+}
+
+ul {
+    padding: 0;
 }
 
 .main {
